@@ -1,0 +1,176 @@
+html{
+  scroll-behavior: smooth; 
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+#navbar{
+  position: fixed;
+  display: flex;
+  align-items: ;
+  justify-content: flex-end;
+  background: darkred;
+  border-bottom: 3px solid;
+  width: 100%;
+  height: 10vh;
+  top: 0;
+}
+#navbar a{
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 20px;
+  padding: 15px;
+}
+#navbar a:hover{
+  background: black;
+}
+#welcome-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: repeatig-linear-gradient(60deg, #003, #009, #ddf, #005, #ddd);
+  height: 100vh;
+  background-color: #0C0C0C;
+}
+.sign{
+  display: none;
+}
+h1{
+  color: white;
+  font-size: 45px;
+  font-family: Roboto;
+}
+.dev{
+  font-size: 30px;
+  font-family: Roboto;
+  color: darkred;
+  font-style: italic;
+}
+#projects{
+  background: #394180;
+  height: ;
+}
+.project-tile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 15vh;
+  padding-bottom: 5vh;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 45px;
+  color: ;
+  font-weight: bold;
+  border: px solid;
+}
+.project{
+  border-radius: 3px;
+  border: px solid;
+}
+.image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 100%;
+}
+.image img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 3px;
+  margin: ;
+  border: px solid;
+}
+.image{
+  border: px solid;
+}
+.name{
+  cursor: pointer;
+  color: whit;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: normal;
+  text-align: center;
+  border: px solid;
+  border-top: none;
+  padding: 10px;
+  background: ;
+}
+.name:hover .sign{
+  display: inline;
+  color: tomato;
+  transition: color 0.9s ease;
+}
+.work{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+  grid-template-columns: auto auto auto;
+  width: 70%;
+  margin: 0 auto;
+  padding: 15px;
+  border: px solid;
+  align-items: center;
+  justify-content: center;
+}
+#media{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #242424;
+  height: 100vh;
+}
+.profile-link{
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+.connect{
+  font-family: Roboto;
+  font-style: italic;
+  font-size: 20px;
+}
+.fa-github{
+  border: 2px solid;
+  width: 80px;
+  height: 30px;
+}
+@media only screen and (max-width: 720px){
+  .image img{
+    width: 70%;
+  height: auto;
+  }
+  .name{
+    font-size: 16px;
+  }
+  #navbar a{
+    font-size: 15px;
+    padding: 8px;
+  }
+  h1{
+    font-size: 30px;
+  }
+  .dev{
+    font-size: 25px;
+  }
+  .project-tile{
+    font-size: 25px;
+  }
+  .profile-link{
+    font-size: 35px;
+  }
+  .connect{
+    font-size: 25px;
+  }
+}
