@@ -23,7 +23,7 @@ html{
   text-decoration: none;
   font-family: Roboto;
   font-size: 20px;
-  padding: 15px;
+  padding: 15;
 }
 #navbar a:hover{
   background: black;
@@ -72,6 +72,7 @@ h1{
   border: px solid;
 }
 .project{
+  cursor: pointer;
   border-radius: 3px;
   border: px solid;
 }
@@ -86,7 +87,8 @@ h1{
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 3px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
   margin: ;
   border: px solid;
 }
@@ -95,20 +97,34 @@ h1{
 }
 .name{
   cursor: pointer;
-  color: whit;
+  color: white;
   font-size: 20px;
   font-family: Roboto;
   font-weight: normal;
   text-align: center;
   border: px solid;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
   border-top: none;
-  padding: 10px;
-  background: ;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.8);
 }
-.name:hover .sign{
+.name a{
+  color: white;
+  text-decoration: none;
+}
+.four{
+  font-size: 18px;
+}
+.name:hover > .sign{
   display: inline;
   color: tomato;
-  transition: color 0.9s ease;
+  transition: all 0.3s ease-out;
+}
+.project:hover .sign{
+  display: inline;
+  color: tomato;
+  transition: ease;
 }
 .work{
   display: flex;
@@ -117,7 +133,7 @@ h1{
   grid-template-columns: auto auto auto;
   width: 70%;
   margin: 0 auto;
-  padding: 15px;
+  padding: 15;
   border: px solid;
   align-items: center;
   justify-content: center;
@@ -127,8 +143,8 @@ h1{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #242424;
-  height: 100vh;
+  background: #303841;
+  height: 80vh;
 }
 .profile-link{
   font-family: Roboto;
@@ -141,22 +157,65 @@ h1{
   font-style: italic;
   font-size: 20px;
 }
-.fa-github{
-  border: 2px solid;
-  width: 80px;
+.platforms{
+  margin-top: 30px;
+  border: px solid;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.platforms a{
+  letter-spacing: ;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-family: Georgia;
+  text-shadow: 5px;
+  padding: 1px;
+  margin: 8px; 
+  font-size: 24px;
+  width: 160px;
+  height: 30px;
+  border: px solid;
+}
+.platforms a:hover{
+  transform: translateY(8px);
+  transition: transform 0.3s ease;
+}
+svg{
+  width: 30px;
   height: 30px;
 }
+.footer{
+  padding: 30px;
+  font-family: Georgia;
+  font-size: 22px;
+  background: #303841;
+  border-top: 4px solid darkred;
+  display: flex;
+  flex-direction: column;
+  justify-content: ;
+}
+.copyright{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.policy{
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
 @media only screen and (max-width: 720px){
-  .image img{
-    width: 70%;
-  height: auto;
-  }
   .name{
     font-size: 16px;
   }
   #navbar a{
     font-size: 15px;
-    padding: 8px;
+    padding: 8;
   }
   h1{
     font-size: 30px;
@@ -165,12 +224,6 @@ h1{
     font-size: 25px;
   }
   .project-tile{
-    font-size: 25px;
-  }
-  .profile-link{
-    font-size: 35px;
-  }
-  .connect{
     font-size: 25px;
   }
 }
