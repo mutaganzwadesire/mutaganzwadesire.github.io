@@ -23,7 +23,7 @@ html{
   text-decoration: none;
   font-family: Roboto;
   font-size: 20px;
-  padding: 15;
+  padding: 15px;
 }
 #navbar a:hover{
   background: black;
