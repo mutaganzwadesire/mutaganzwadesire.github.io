@@ -54,7 +54,7 @@ h1{
 }
 #projects{
   background: #394180;
-  height: ;
+  padding-top: 15px;
 }
 .project-tile{
   display: flex;
@@ -168,6 +168,7 @@ h1{
 .platforms a{
   letter-spacing: ;
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
   justify-content: center;
   text-decoration: none;
